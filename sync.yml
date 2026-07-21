@@ -1,0 +1,38 @@
+name: Sync from English Mirror
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Chinese repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Fetch English mirror
+        run: |
+          git remote add english https://github.com/Kitaro-Loked/gt-unlimited.git
+          git fetch english main
+
+      - name: Sync non-doc files
+        run: |
+          git checkout english/main -- .gitignore LICENSE Caddyfile.example
+          git checkout english/main -- api/
+          git checkout english/main -- scripts/
+          git checkout english/main -- web/
+          git checkout english/main -- .github/ISSUE_TEMPLATE/
+          git checkout english/main -- .github/PULL_REQUEST_TEMPLATE.md
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: auto-sync from English mirror [skip ci]"
+          git push origin main

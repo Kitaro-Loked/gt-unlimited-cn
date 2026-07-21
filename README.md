@@ -2,6 +2,8 @@
 
 # GT UNLIMITED — 金融终端
 
+### GT UNLIMITED — self-hosted financial terminal (multilingual, open source)
+
 [English](docs/README.en.md) | 中文（主文档）
 
 </div>
@@ -10,15 +12,17 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![Deploy](https://img.shields.io/badge/部署-一键启动-blue.svg)](#快速开始)
+[![Website](https://img.shields.io/badge/🌐-trading.2009731.xyz-blue)](https://trading.2009731.xyz)
 
 </div>
 
-> 一个自托管、单页的金融监控终端，灵感来自 Bloomberg / TradingView。使用原生 HTML/CSS/JS 构建，面向希望拥有集中式全球行情、衍生品、风险、宏观事件与新闻看板的交易者。
+> **GT UNLIMITED** 是一款面向专业交易者和金融从业者的开源金融监控终端。无需复杂构建步骤，单页应用即可提供接近机构级的行情监控、衍生品分析、投资组合风险管理和宏观事件追踪能力。
+>
+> A self-hosted, single-page financial monitoring terminal inspired by Bloomberg / TradingView. Built with vanilla HTML/CSS/JS and designed for traders who want a centralized dashboard for global markets, derivatives, risk, macro events and news.
 
-- **🌐 在线演示**: https://trading.2009731.xyz
-- **📦 中文主仓库**: https://github.com/Kitaro-Loked/gt-unlimited-cn
-- **📦 英文副仓库**: https://github.com/Kitaro-Loked/gt-unlimited
+- **🌐 在线演示 / Live demo**: https://trading.2009731.xyz
+- **📦 中文主仓库 / Chinese repo**: https://github.com/Kitaro-Loked/gt-unlimited-cn
+- **📦 英文副仓库 / English mirror**: https://github.com/Kitaro-Loked/gt-unlimited
 
 ---
 

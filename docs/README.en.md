@@ -1,11 +1,17 @@
+<div align="center">
+
 # GT UNLIMITED — Financial Terminal
 
+### GT UNLIMITED — self-hosted financial terminal (multilingual, open source)
+
 English | [中文](../README.md)
+
+</div>
 
 A self-hosted, single-page financial monitoring terminal inspired by Bloomberg / TradingView. Built with vanilla HTML/CSS/JS and designed for traders who want a centralized dashboard for global markets, derivatives, risk, macro events and news.
 
 - **Official instance**: https://trading.2009731.xyz
-- **Chinese repository (primary)**: https://github.com/Kitaro-Loked/gt-unlimited-cn
+- **Chinese repository (primary)**: https://github.com/Kitaro-Loked/gt-unlimited-cn ⭐
 - **English repository (mirror)**: https://github.com/Kitaro-Loked/gt-unlimited
 
 ---
